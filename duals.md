@@ -1,7 +1,12 @@
 Joint notes from Berkeley Math 110 fa'22 and Axler
 
 ## Terminology
-linear functionals on V == V' == dual of V
+- linear functionals on V == V' == dual of V
+- dual of T == T'
+
+## Linear Functionals
+- e.g. output of arbitrary polynomial with input 0
+- can express all linear functionals as phi(v) = a_1 v_1 + ... + a_n v_n
 
 ## Dual Space
 vector space of linear functionals
@@ -32,11 +37,19 @@ vector space of linear functionals
 - T: V -> W
 - phi: linear functional on W
 
-- dual of T: linear functional of W to linear functional of V
-	+ for some arbitrary linear funcitonal of W (phi)
+- dual of T (T')
+	+ space of linear functionals of W to space of linear functionals of V
+		* W' -> V'
+	+ definition:
+		* input phi: phi in W'
+		* output T'(phi): composite of phi and T
+	+ i.e. for some arbitrary linear funcitonal of W (phi) ->
 	+ we can make a linear functional of V by returning a function where you:
 		* map V to W w/ T
 		* W to F w/ phi
+	+ i.e. given some map phi, outputs a map where you first do T then do phi
+
+- is a linear map
 
 ## Annihilator
 - U: subset of vector space V
